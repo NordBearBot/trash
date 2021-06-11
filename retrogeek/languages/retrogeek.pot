@@ -1,0 +1,189 @@
+# Copyright (C) 2021 tuxlog
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: RetroGeek 0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/retrogeek\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-03-13T10:19:21+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: retrogeek\n"
+
+#. Theme Name of the theme
+msgid "RetroGeek"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://tuxlog.de/retrogeek/"
+msgstr ""
+
+#. Description of the theme
+msgid "A lightweight, minimal, fast and geeky retro theme remembering the good old terminal times"
+msgstr ""
+
+#. Author of the theme
+msgid "tuxlog"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://tuxlog.de/"
+msgstr ""
+
+#. translators: 1: heading for comments
+#: comments.php:33
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: Number of comments, 2: Post title.
+#: comments.php:47
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:87
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:47
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. translators: %s: WordPress
+#: footer.php:50
+msgid "Proudly powered by %s and RetroGeek-Theme"
+msgstr ""
+
+#: functions.php:178
+msgid "Mainmenu"
+msgstr ""
+
+#: functions.php:189
+msgid "Footer left"
+msgstr ""
+
+#: functions.php:200
+msgid "Footer middle"
+msgstr ""
+
+#: functions.php:211
+msgid "Footer right"
+msgstr ""
+
+#: header.php:35
+msgid "Skip to content"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:41
+msgid "Text Color"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:66
+msgid "Link Color"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:92
+msgid "Title as ASCII-Art?"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:97
+msgid "If activated converts the blog title to a ASCII-Art representation"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:119
+msgid "Retro-Ticker for Subtitle?"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:124
+msgid "If activated, show the tagline in a letter by letter way, like on a terminal in the 80s. Geeky."
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:144
+msgid "ASCII-Art Logo"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:145
+msgid "Select your ASCII-Art logo."
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:148
+msgid "Snail"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:149
+msgid "Kilroy"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:150
+msgid "Tux"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:151
+msgid "Userdefined"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:152
+msgid "None"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:171
+msgid "Custom ASCII-Art Logo"
+msgstr ""
+
+#: inc/class-retrogeek-customize.php:172
+msgid "This is to have your own ASCII-Art Logog in the header of the site."
+msgstr ""
+
+#: index.php:56
+msgid "Continue reading"
+msgstr ""
+
+#: index.php:68
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr ""
+
+#: index.php:75
+#: index.php:116
+msgid "Page"
+msgstr ""
+
+#. translators: %: page number.
+#: index.php:78
+msgid "Page %"
+msgstr ""
+
+#: index.php:85
+msgid "Filed under: "
+msgstr ""
+
+#: index.php:85
+#: index.php:88
+msgid "Edit This"
+msgstr ""
+
+#: index.php:88
+msgid "Published"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "submit button"
+msgid "Search"
+msgstr ""

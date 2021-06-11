@@ -1,0 +1,334 @@
+/*
+Theme Name: RetroGeek
+Theme URI: https://tuxlog.de/retrogeek/
+Author: tuxlog
+Author URI: https://tuxlog.de/
+Description: A lightweight, minimal, fast and geeky retro theme remembering the good old terminal times
+Version: 0.3
+Requires PHP: 5.6
+Tested up to: 5.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, one-column, block-styles, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, flexible-header
+Text Domain: retrogeek
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* whenever we need to clear floats */
+.clearfix { content:""; display:table; clear:both; }
+
+/* position post thumbnails */
+.retrogeek-thumbnail {float:left; padding-right: 20px;}
+
+body {  background-color: var(--rg-background-color);
+	color: var(--rg-text-color);
+}
+
+.site-branding,
+.asite-description,
+.site-info,
+.site-title {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+@media (max-width: 700px) {
+	#asciiartlogo { font-size: 10px; }
+}
+
+.site-description {margin-bottom: 30px;}
+
+.site-title > a >pre { font-size:16px;}
+
+/* Hide short text by default (resolution > 600px) */
+.site-title-mob { display: none; }
+
+/* When resolution <= 600px, hide full text and show short text */
+@media (max-width: 600px) {
+	.site-title { display: none; }
+	.site-title-mob { display: inline-block; }
+}
+
+/* some space */
+.site-footer { margin-top: 50px; }
+.entry-right { padding-bottom: 55px;}
+
+
+/* code tag wrap amd color */
+code { display: block; overflow-x: auto; padding: .5em; background: #444444; }
+
+/* add border to sticky post */
+.sticky { border: #ffffff solid 2px; padding:10px; margin-bottom: 30px;}
+
+/* make quotes italic */
+blockquote { font-style: italic; }
+
+/* custom logo */
+.custom-logo { max-width: 170px; }
+
+
+/* Menu bar start */
+.navigation{ position: relative; z-index: 1000; padding: 11px 0 0; }
+.nav{ margin: 0; padding: 0; }
+div.main-nav { background-color: #444444; min-height: 31px; margin: 0 0 25px; }
+
+.nav li{
+	float: left;
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0 38px 0 0;
+	position: relative;
+	list-style-type: none;
+	background-color: #444444;
+}
+
+.nav li:last-child{
+	margin: 0;
+}
+
+.nav li a{
+	color: var(--rg-text-color);
+	display: block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav li a:hover, .nav li.current_page_item a{
+	color: var(--rg-link-text-color);
+}
+
+.nav li ul{
+	position: absolute;
+	width: 220px;
+	top: 23px;
+	left: 0;
+	background-color: #444444;
+	transform: scaleY(0);
+	transform-origin: 0 0 0;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+}
+
+.nav li:hover > ul,
+.nav li:focus-within ul{
+	transform: scale(1);
+	visibility: visible;
+	z-index: 1;
+}
+
+.nav li ul li{
+	float: none;
+	margin: 0;
+	font-size: 14px;
+	line-height: 22px;
+	border-top: 1px solid #aaaaaa;
+}
+
+.nav li ul li a{
+	padding: 10px 10px;
+	color: var(--rg-text-color);
+}
+.nav li ul li a:hover{
+	color: var(--rg-link-text-color);
+}
+/* end menubar */
+
+/*
+ * style mobile top navigation menu
+ */
+.toggle-topnav {
+	display: none !important;
+}
+
+@media screen and ( max-width: 580px ) {
+	.main-nav { display: none; }
+	.toggle-topnav {
+		display: inline-block !important;
+		margin: 15px 15px 0px 15px;
+		font-size: 2em;
+		transition: color linear 0.15s;
+	}
+
+	a.toggle-topnav:link,
+	a.toggle-topnav:visited,
+	a.toggle-topnav:hover,
+	a.toggle-topnav:active {
+		text-decoration: none;
+		color: var(--rg-text-color);
+	}
+
+	.sub-menu { display: block !important; }
+}
+
+.top-nav {
+	display: block;
+	position: relative;
+	background: #444;
+	text-align: left;
+}
+
+
+.top-nav ul {
+	display: none;
+	overflow: auto;
+	top: 0px;
+	right: 0px;
+	z-index: 999;
+	padding-right: 15px;
+	background: #444;
+	font-size: 100% !important;
+	margin: 0.5rem 0.5rem 0.1rem 0.1rem;
+}
+
+.top-nav ul li {
+	float: none;
+	display: block;
+	position: relative;
+	top: 0px;
+	right: -15px;
+	min-width: 200px;
+	background: #444;
+	text-align: left;
+}
+
+.top-nav li:after {
+	content: none;
+}
+
+
+/* position footer widget areas */
+.widget-area { float:left; width:33%;}
+@media (max-width:767px) {
+	.widget-area{ position:relative; width:100%; }
+}
+
+
+/* WordPress classes */
+.alignleft { display: inline; float: left; }
+.alignright { display: inline; float: right; }
+.aligncenter { display: block; margin-right: auto; margin-left: auto; }
+blockquote.alignleft, .wp-caption.alignleft, img.alignleft { margin: 0.4em 1.6em 1.6em 0; }
+blockquote.alignright, .wp-caption.alignright, img.alignright { margin: 0.4em 0 1.6em 1.6em; }
+blockquote.aligncenter, .wp-caption.aligncenter, img.aligncenter { clear: both; margin-top: 0.4em; margin-bottom: 1.6em; }
+.wp-caption.alignleft, .wp-caption.alignright, .wp-caption.aligncenter { margin-bottom: 1.2em; }
+.wp-caption-text { color: var(--rg-text-color); font-family: "Monospace", sans-serif; font-size: 12px; font-size: 1.2rem; line-height: 1.5; padding: 0.5em 0; }
+.gallery-caption { color: var(--rg-text-color); display: block; font-family: "Monospace", sans-serif; font-size: 12px; font-size: 1.2rem; line-height: 1.5; padding: 0.5em 0; }
+.bypostauthor > article .fn:after { content: "\f304"; position: relative; top: 5px; left: 3px; }
+.says, .screen-reader-text { clip: rect(1px, 1px, 1px, 1px); height: 1px; overflow: hidden; position: absolute !important; width: 1px; }
+
+
+/* comment classes */
+li.comment {list-style-type: none;}
+div.comment-author { float:left; padding-right:10px;}
+div.comment-author > cite { vertical-align:top; }
+div.comment-meta:after {content:"";display:table; clear:both;}
+div.reply {margin-bottom: 3em;}
+div.comment-body > p {margin-bottom: 1em;}
+.comment.odd {background-color: #444444}
+input#submit.submit {color: var(--rg-link-text-color);}
+textarea#comment { color: #000000;}
+.comment-respond {margin-top: 40px;}
+.nav-previous { float:left;}
+.nav-next { float:right;}
+div.nav-links:after {content:"";display:table; clear:both;}
+
+
+/*
+ * Style the search form at the right side of the menu bar
+ */
+/* my-nav-menu-search menu item created in functions.php. Move it way over to the right */
+.my-nav-menu-search {
+	float: right;
+}
+
+.my-nav-menu-search .search-form {
+	position: relative;
+	margin: 0;
+}
+/*Stop the display of the Search button*/
+.my-nav-menu-search .search-submit {
+	display: none;
+}
+/* The "Search for" text is needed for screen readers, but we move it off screen, so we won't see it */
+.my-nav-menu-search .search-form .screen-reader-text {
+	position: absolute;
+	left: -9999px;
+	overflow: hidden;
+}
+
+.search-field {
+	background-color: var(--rg-background-color) !important;
+	color: var(--rg-text-color);
+}
+
+.search-submit {
+	display:none;
+}
+
+
+
+/* Style the search input textbox */
+.my-nav-menu-search .search-field {
+	border: none;
+	-webkit-box-shadow:    none;
+	-moz-box-shadow:       none;
+	box-shadow:            none;
+	cursor: pointer;
+	height: 22px;
+	margin: 1px 0 1px 0;
+	padding: 0px;
+	position: relative;
+	-webkit-transition: width 400ms ease;
+	-moz-transition:    width 400ms ease;
+	-o-transition:      width 400ms ease;
+	transition:         width 400ms ease;
+	width: 130px;
+	color: var(--rg-text-color);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--rg-link-text-color);
+	opacity: 1; /* Firefox */
+}
+
+/* Reset nav width and search floating for mobile menu */
+@media (max-width: 979px){
+	.navbar .nav .my-nav-menu-search {
+		float: left;
+	}
+	.navbar .nav {
+		width: auto;
+	}
+}
+
+
+/* skip to content link is hidden until it gets focus. */
+.skip-link:focus {
+	clip: auto;
+	height: auto;
+	left: 6px;
+	top: 7px;
+	width: auto;
+	z-index: 100000;
+	position:relative !important;
+}
+
+/* make sure WordPress galleries have a correct clear at the end */
+.gallery:after { content:""; display:table; clear:both; }
+
+/* make sure tables are striped if applicable */
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: #444444;
+}
+
+/* formatting for the tickerwidget */
+.rg_tickertext {
+	margin-right: 25px;
+	margin-bottom: 25px;
+}

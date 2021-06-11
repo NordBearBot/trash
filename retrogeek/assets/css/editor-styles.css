@@ -1,0 +1,18 @@
+.wp-block {
+	font-family: "Monospace", sans-serif;
+	background-color: var(--rg-background-color);
+	color: var(--rg-text-color);
+}
+
+.wp-block a {
+	color: var(--rg-link-text-color);
+}
+
+div.edit-post-visual-editor,
+div.block-editor-writing-flow {
+	background: #303030;
+}
+
+.wp-block.is-selected {
+	background-color: #444444;
+}

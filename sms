@@ -1,0 +1,13 @@
+import requests
+num = input('Номер (79670000000): ')
+lim = int(input('Количество повторов (рекомендуем значение меньше 4.): '))
+numplus = '+' + num
+def spam():
+try:
+try: 
+print(
+("
+",data = {'phone': num}))
+print 
+data = {'phone': num}))
+num = input('Номер (79670000000): ')
